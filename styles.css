@@ -1,0 +1,237 @@
+:root {
+    --color-primary: #16404D;
+    --color-secondary: #DDA853;
+    --color-tertiary: #A6CDC6;
+    --color-quasrternary: #FBF5DD;
+    --color-bg: #EEEEEE;
+    --color-text-primary: #16404D;
+    --color-text-secondary: #DDA853;
+
+    h1 {
+        font-family: bebas-neue-semirounded, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        color: var(--color-text-primary);
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-family: bebas-neue-semirounded, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        color: var(--color-text-primary);
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-family: finalsix, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 16px;;
+        color: var(--color-text-primary);
+        margin: 0 auto;
+    }
+
+    p, a {
+        font-family: finalsix, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: var(--color-text-primary);
+        margin: 0 auto;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 10px;
+}
+
+.flex-ca {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.header {
+    background-color: var(--color-bg);
+	background-size: 400% 400%;
+    flex-direction: row;
+	animation: gradient 20s ease infinite;
+    padding: 40px 20px;
+    border-radius: 10px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        border: 1px #ffffff solid;
+        padding: 20px 50px;
+    }
+}
+
+.fa-bars {
+    position: absolute;
+    scale: 1.3;
+}
+
+.fa-bars {
+    left: 15px
+}
+
+.header-logo {
+    width: 200px;
+
+    @media only screen and (max-width: 768px) {
+        width: 130px;
+    }
+}
+
+.header-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 15px;   
+}
+
+.fa-solid {
+    scale: 1.3;
+    padding: 15px;
+} 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.about {
+    padding: 40px 10%;
+}
+
+.about-image {
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    margin: 20px 0;;
+}
+
+.product-preview {
+    padding: 20px 0;
+    border-radius: 10px;
+
+    h2, h3, a, p {
+        padding: 20px;
+    }
+}
+
+.product-preview__container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    width: 100%;
+    gap: 20px;
+    flex: 1;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.product-preview__card {
+    display: flex;
+    background-color: var(--color-bg);
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 10px;
+
+    .product-preview-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .steps-img {
+        margin: 20px auto;
+    }
+}
+
+.contact {
+    background-color: var(--color-tertiary);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: var(--color-quasrternary);
+}
+  
+  input[type=submit] {
+    background-color: var(--color-text-primary);
+    color: var(--color-quasrternary);
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+.contact-form {
+    padding: 20px;
+    font-family: finalsix, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;;
+    color: var(--color-text-primary);
+    margin: 0 auto;
+}
+
+.contact-image {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+        
+}
